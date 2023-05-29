@@ -25,6 +25,22 @@ public class WeightedGraph <V>{
             throw new IllegalArgumentException("Vertex " + vertex + " is not part of the graph");
         }
     }
+    public List<WeightedEdge<V>> getEdges() {
+        List<WeightedEdge<V>> allEdges = new ArrayList<>();
+        for (List<WeightedEdge<V>> edges : map.values()) {
+            allEdges.addAll(edges);
+        }
+        return allEdges;
+    }
+
+    public List<WeightedEdge<V>> getEdges(Vertex<V> vertex) {
+        validateVertex(vertex);
+        return map.get(vertex);
+    }
+
+    public List<Vertex<V>> getVertices() {
+        return new ArrayList<>(map.keySet());
+    }
     public static class WeightedEdge<V> {
         private Vertex<V> source;
         private Vertex<V> destination;
