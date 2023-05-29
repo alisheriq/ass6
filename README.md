@@ -16,6 +16,7 @@ The following classes are included:
 
 <details>
 <summary>Vertex class</summary>
+ 
 The Vertex class represents a vertex in a graph. It stores the data associated with the vertex, maintains a map of adjacent vertices and their corresponding weights, and keeps track of the distance of the vertex from a source vertex.
 
 Constructor:
@@ -38,6 +39,7 @@ double getDistance(): Returns the distance of the vertex from a source vertex.
 
 <details>
 <summary>WeightedGraph class</summary>
+ 
 The WeightedGraph class represents a weighted graph. It maintains a map of vertices and their corresponding weighted edges.
 
 Constructor:
@@ -71,6 +73,36 @@ Vertex<V> getSource(): Returns the source vertex of the edge.
 Vertex<V> getDestination(): Returns the destination vertex of the edge.
  
 double getWeight(): Returns the weight of the edge.
+ 
+</details>
+
+<details>
+<summary>BreadthFirstSearch class</summary>
+ 
+The BreadthFirstSearch class implements the Search interface and performs breadth-first search on a weighted graph. It finds the shortest path between a source vertex and a destination vertex.
+
+Constructor:
+ 
+BreadthFirstSearch(WeightedGraph<V> graph): Initializes a new breadth-first search with the given weighted graph.
+ 
+Methods:
+ 
+List<V> findPath(Vertex<V> source, Vertex<V> destination): Finds the shortest path between the source and destination vertices using breadth-first search.
+ 
+</details>
+ 
+<details>
+<summary>DijkstraSearch class</summary>
+ 
+The DijkstraSearch class implements the Search interface and performs Dijkstra's algorithm on a weighted graph. It finds the shortest path between a source vertex and a destination vertex.
+
+Constructor:
+ 
+DijkstraSearch(WeightedGraph<V> graph): Initializes a new Dijkstra's algorithm with the given weighted graph.
+ 
+Methods:
+ 
+List<V> findPath(Vertex<V> source, Vertex<V> destination): Finds the shortest path between the source and destination vertices using Dijkstra's algorithm.
  
 </details>
  
