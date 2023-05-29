@@ -44,4 +44,15 @@ public class DijkstraSearch <V> implements Search<V>{
 
         return Collections.emptyList(); // No path found
     }
+    private List<V> constructPath(Map<Vertex<V>, Vertex<V>> parentMap, Vertex<V> destination) {
+        List<V> path = new LinkedList<>();
+        Vertex<V> current = destination;
+
+        while (current != null) {
+            path.add(0, current.getData());
+            current = parentMap.get(current);
+        }
+
+        return path;
+    }
 }
