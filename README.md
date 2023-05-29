@@ -16,13 +16,20 @@ The following classes are included:
 ### Vertex
 The Vertex class represents a vertex in a graph. It stores the data associated with the vertex, maintains a map of adjacent vertices and their corresponding weights, and keeps track of the distance of the vertex from a source vertex.
 
-Constructor
+Constructor:
+
 Vertex(V data): Initializes a new vertex with the given data.
-Methods
+
+Methods:
+
 V getData(): Returns the data associated with the vertex.
+
 void addAdjacentVertex(Vertex<V> destination, double weight): Adds an adjacent vertex with its weight to the map of adjacent vertices.
+ 
 Map<Vertex<V>, Double> getAdjacentVertices(): Returns the map of adjacent vertices and their corresponding weights.
+ 
 void setDistance(double distance): Sets the distance of the vertex from a source vertex.
+ 
 double getDistance(): Returns the distance of the vertex from a source vertex.
 
 ## Install
