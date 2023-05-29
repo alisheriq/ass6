@@ -13,6 +13,7 @@ IntelliJ IDEA
 
 This repository contains Java classes for working with weighted graphs and implementing search algorithms. 
 The following classes are included:
+
 <details>
 <summary>Vertex class</summary>
 The Vertex class represents a vertex in a graph. It stores the data associated with the vertex, maintains a map of adjacent vertices and their corresponding weights, and keeps track of the distance of the vertex from a source vertex.
@@ -32,7 +33,9 @@ Map<Vertex<V>, Double> getAdjacentVertices(): Returns the map of adjacent vertic
 void setDistance(double distance): Sets the distance of the vertex from a source vertex.
  
 double getDistance(): Returns the distance of the vertex from a source vertex.
+ 
 </details>
+ 
 ## Install
  Copy the code from Main.java file to your project.  
  **IMPORTANT:** You will need to remove the comments to run the code.
