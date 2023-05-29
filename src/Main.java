@@ -27,12 +27,12 @@ public class Main {
 
         // Perform breadth-first search
         Search<String> bfs = new BreadthFirstSearch<>(graph);
-        List<String> bfsPath = bfs.findPath(vA, vE);
+        List<String> bfsPath = bfs.findPath(vA, vD);
         System.out.println("Breadth-First Search Path: " + bfsPath);
 
         // Perform Dijkstra's algorithm
         Search<String> dijkstra = new DijkstraSearch<>(graph);
-        List<String> dijkstraPath = dijkstra.findPath(vA, vE);
+        List<String> dijkstraPath = dijkstra.findPath(vA, vD);
         System.out.println("Dijkstra's Algorithm Path: " + dijkstraPath);
     }
 }
