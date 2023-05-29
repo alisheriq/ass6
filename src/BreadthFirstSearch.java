@@ -33,7 +33,15 @@ public class BreadthFirstSearch <V> implements Search<V> {
         return Collections.emptyList(); // No path found
     }
     private List<V> constructPath(Map<Vertex<V>, Vertex<V>> parentMap, Vertex<V> destination) {
-        return null;
+        List<V> path = new LinkedList<>();
+        Vertex<V> current = destination;
+
+        while (current != null) {
+            path.add(0, current.getData());
+            current = parentMap.get(current);
+        }
+
+        return path;
     }
 
 }
