@@ -35,6 +35,44 @@ void setDistance(double distance): Sets the distance of the vertex from a source
 double getDistance(): Returns the distance of the vertex from a source vertex.
  
 </details>
+
+<details>
+<summary>WeightedGraph class</summary>
+The WeightedGraph class represents a weighted graph. It maintains a map of vertices and their corresponding weighted edges.
+
+Constructor:
+ 
+WeightedGraph(): Initializes a new weighted graph.
+ 
+Methods:
+ 
+void addVertex(Vertex<V> vertex): Adds a vertex to the graph with an empty list of edges.
+ 
+void addEdge(Vertex<V> source, Vertex<V> destination, double weight): Adds a weighted edge between the source and destination vertices with the given weight.
+ 
+List<WeightedEdge<V>> getEdges(): Returns a list of all the weighted edges in the graph.
+ 
+List<WeightedEdge<V>> getEdges(Vertex<V> vertex): Returns a list of weighted edges adjacent to the specified vertex.
+ 
+List<Vertex<V>> getVertices(): Returns a list of all vertices in the graph.
+ 
+WeightedEdge:
+
+The WeightedEdge class represents a weighted edge between two vertices in a graph. It stores the source vertex, destination vertex, and weight of the edge.
+
+Constructor:
+ 
+WeightedEdge(Vertex<V> source, Vertex<V> destination, double weight): Initializes a new weighted edge with the given source, destination, and weight.
+ 
+Methods:
+ 
+Vertex<V> getSource(): Returns the source vertex of the edge.
+ 
+Vertex<V> getDestination(): Returns the destination vertex of the edge.
+ 
+double getWeight(): Returns the weight of the edge.
+ 
+</details>
  
 ## Install
  Copy the code from Main.java file to your project.  
